@@ -1,6 +1,7 @@
 import MainLayout from "@/components/MainLayout";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { RecoilRoot } from "recoil";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="kr">
       <body className={inter.className}>
         <MainLayout>{children}</MainLayout>
       </body>
